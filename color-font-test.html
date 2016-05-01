@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <title>Pixelambacht color font test</title>
+  <style>
+  @font-face {
+    font-family: "Pixelambacht Color COLR";
+    src: url("./PixelambachtColor-colr.ttf");
+  }
+  @font-face {
+    font-family: "Pixelambacht Color SBIX";
+    src: url("./PixelambachtColor-sbix.ttf");
+  }
+  @font-face {
+    font-family: "Pixelambacht Color SVG";
+    src: url("./PixelambachtColor-svg.ttf");
+  }
+  @font-face {
+    font-family: "Pixelambacht Color CBDT";
+    src: url("./PixelambachtColor-cbdt.ttf");
+  }
+  h1,
+  p {
+    text-align: center;
+  }
+  .color-test-table {
+    width: 100%;
+    max-width: 800px;
+    background: #eee;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .color-test-table tbody {
+    font-size: 6em;
+    color: lightgrey;
+  }
+  .color-test-colr {
+    font-family: "Pixelambacht Color COLR";
+  }
+  .color-test-sbix {
+    font-family: "Pixelambacht Color SBIX";
+  }
+  .color-test-svg {
+    font-family: "Pixelambacht Color SVG";
+  }
+  .color-test-cbdt {
+    font-family: "Pixelambacht Color CBDT";
+  }
+  </style>
+</head>
+<body>
+
+<h1>Pixelambacht's multicolor font test</h1>
+
+  <table class="color-test-table">
+    <thead>
+      <tr>
+        <td>Microsoft COLR/CPAL</td>
+        <td>Adobe/Mozilla SVG</td>
+        <td>Google CBDT/CBLC</td>
+        <td>Apple SBIX</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="color-test-colr">x</td>
+        <td class="color-test-svg">x</td>
+        <td class="color-test-cbdt">X</td>
+        <td class="color-test-sbix">x</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>A grey dot means no support. A <span style="color:green">green dot with lightgreen checkmark</span> means that format is supported on your browser.</p>
+  <p><strong>What's going on here?</strong> It's a test to see if you browser supports multicolor fonts! <a href="http://pixelambacht.nl/2014/multicolor-fonts/">Read all about it here!</a></p>
+</body>
+</html>
